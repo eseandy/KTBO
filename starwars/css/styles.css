@@ -1,0 +1,182 @@
+/**/
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:regular,bold);
+
+body, div{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background:#000;
+	font-family: "Droid Sans";
+}
+.intro{
+	color:turquoise;
+	position: relative;
+	width: 16em;
+	font-size: 200%;
+	font-weight: 400;
+	margin: 20% auto;
+	opacity: 0;
+	z-index: 1;
+
+	animation: intro 2.5s ease-out;	
+	-webkit-animation: intro 2.5s ease-out;
+	-moz-animation: intro 2.5s ease-out;
+	-ms-animation: intro 2.5s ease-out;
+	-o-animation: intro 2.5s ease-out;
+		
+}
+
+@keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+@-o-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+
+
+.title{
+	position: absolute;
+	text-align: center;	
+	font-size: 6em;	
+	line-height: 1em;
+	color: #000;	
+	width: 4em;
+	left: 40%;
+	top: 25%;
+	text-shadow: -2px -2px 0 yellow, 2px -2px 0 yellow, -2px 2px 0 #ff6, 2px 2px 0 yellow;
+	opacity: 0;
+	z-index: 100;
+
+	animation: title 4.5s ease-out 2.5s;	
+	-webkit-animation: title 4.5s ease-out 2.5s;
+	-moz-animation: title 4.5s ease-out 2.5s;
+	-ms-animation: title 4.5s ease-out 2.5s;
+	-o-animation: title 4.5s ease-out 2.5s;
+
+}
+
+@keyframes title {
+	0% { transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { transform: scale(0.2); opacity: 0; }
+}
+@-webkit-keyframes title {
+	0% { -webkit-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -webkit-transform: scale(0.2); opacity: 0; }
+}
+@-moz-keyframes title {
+	0% { -moz-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -moz-transform: scale(0.2); opacity: 0; }
+}
+@-ms-keyframes title {
+	0% { -ms-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -ms-transform: scale(0.2); opacity: 0; }
+}
+@-o-keyframes title {
+	0% { -o-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -o-transform: scale(0.2); opacity: 0; }
+}
+
+
+.content{
+	position: absolute;
+	font-size: 350%;
+	text-align: justify;
+	color: yellow;	
+	width: 18em;
+	height: 50em;
+	bottom: 0;
+	left: 50%;
+	margin-left: -9em;
+
+	transform: perspective(300px) rotateX(25deg);
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-o-transform-origin: 50% 100%;
+	
+	transform-origin: 50% 100%;
+	-webkit-transform: perspective(300px) rotateX(25deg);
+	-moz-transform: perspective(300px) rotateX(25deg);
+	-ms-transform: perspective(300px) rotateX(25deg);
+	-o-transform: perspective(300px) rotateX(25deg);
+		
+}
+
+.content:after
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 60%;
+	content: ' ';
+
+	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);	
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -o-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+
+	pointer-events: none;
+}
+
+.text-animated{
+	position: absolute;
+	top: 100%;
+
+	animation: move 100s linear 4s infinite;	
+	-webkit-animation: move 100s linear 4s infinite;
+	-moz-animation: move 100s linear 4s infinite;
+	-ms-animation: move 100s linear 4s infinite;
+	-o-animation: move 100s linear 4s infinite;
+}
+
+
+@keyframes move {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+@-webkit-keyframes move {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+@-moz-keyframes move {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+@-ms-keyframes move {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+@-o-keyframes move {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+
