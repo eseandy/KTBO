@@ -1,4 +1,17 @@
-/**/
+/*AOL*/
+/*
+-----------------------------------
+Se divide en 3 animaciones:
+
+1. Texto introductorio: intro
+
+2. Título estilo Star Wars
+
+3. Contenido que se desplaza hacia arriba estilo Star Wars
+
+4. Se utilizan hacks para diferentes browsers: webkit,mozilla,microsoft, estandar
+
+*/
 
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:regular,bold);
 
