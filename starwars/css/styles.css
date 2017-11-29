@@ -193,3 +193,67 @@ body, div{
 }
 
 
+/*************STAR TWINKLING ***************/
+
+.star {
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 2px;    
+    top: 50%;
+    left: 50%;
+    background: white;
+    overflow: hidden;
+    z-index: 2;
+    animation: twinkling  5s linear 0s infinite normal;
+    -webkit-animation: twinkling  5s linear 0s infinite normal;
+    -moz-animation: twinkling  5s linear 0s infinite normal;
+    -ms-animation: twinkling  5s linear 0s infinite normal;
+    -o-animation: twinkling  5s linear 0s infinite normal;
+}
+.start,.starb {
+    position: relative;
+    display: block;
+}
+.start:before,.start:after,.starb:before,.starb:after {
+    content: "";
+    width: 2px;
+    height: 2px;
+    background: gray;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.start:before {
+    top: -20px;
+    left: -20px;
+}
+.start:after {
+    bottom: -20px;
+    left: 20px;
+}
+.starb:before {
+    top: 20px;
+    left: -20px;
+}
+.starb:after {
+    top: -20px;
+    left: 20px;
+}
+
+@-webkit-keyframes twinkling  {
+    0% { -webkit-transform: scale(1.0); opacity: 1; }
+    20% { -webkit-transform: scale(0.5); opacity: 0; }
+    40% { -webkit-transform: scale(1.0); opacity: 1; }
+    60% { -webkit-transform: scale(0.5); opacity: 0; }
+    80% { -webkit-transform: scale(1.0); opacity: 1; }
+    100% { -webkit-transform: scale(0.5); opacity: 0; }
+}
+@-moz-keyframes twinkling  {
+	0% { -moz-transform: scale(1.0); opacity: 1; }
+    20% { -moz-transform: scale(0.5); opacity: 0; }
+    40% { -moz-transform: scale(1.0); opacity: 1; }
+    60% { -moz-transform: scale(0.5); opacity: 0; }
+    80% { -moz-transform: scale(1.0); opacity: 1; }
+    100% { -moz-transform: scale(0.5); opacity: 0; }
+}
