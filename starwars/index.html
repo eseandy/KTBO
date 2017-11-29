@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
 </head>
 <body>
+
 	<!--Texto introductorio-->
 	<p class="intro">Hace mucho tiempo, en una primaria muy muy lejana ...</p>
 
@@ -33,5 +34,25 @@
 		</div>
 	</div>
 	<!--End Div content-->
+
+	<!--Generador de Estrellas-->
+	<script>
+		body = document.body;
+		for (var i=0; i<=200; i++){
+			starGenerator();
+		}
+		function starGenerator(){
+
+			t =  Math.random() * 100 + "%";
+			l =  Math.random() * 100 + "%";
+			a =  Math.random() + "s";
+			
+			var _star = document.createElement('div');
+			_star.innerHTML = "<figure class='star' style='top:" + t + "; left:" + l + "; webkitAnimationDelay=" + a + ";'><figure class='star-top'></figure><figure class='star-bottom'></figure></figure>"
+
+			body.appendChild(_star.firstChild);
+		}
+	
+	</script>
 </body>
 </html>
